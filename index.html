@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <header class="navbar navbar-expand-lg sticky-top bg-light">
+    <header class="navbar navbar-expand-md sticky-top bg-light">
       <nav class="container-xxl flex-wrap flex-lg-nowrap">
         <button
           class="navbar-toggler"
@@ -23,8 +23,15 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <p>Snail Mail Logo</p>
-        <p>Profile pic</p>
+        <a href="#" class="navbar-brand d-flex gap-2"
+          >SnailMail
+          <img
+            src="Assets/snail-svgrepo-com.svg"
+            alt=""
+            class="img-fluid"
+            height="24"
+            width="24"
+        /></a>
       </nav>
     </header>
     <div
@@ -33,90 +40,22 @@
     >
       <h1 class="display-6">Inbox</h1>
     </div>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">John Jones</h5>
-        <h6 class="card-subtitle text-muted">Subject</h6>
-        <p class="card-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing...
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">John Jones</h5>
-        <h6 class="card-subtitle text-muted">Subject</h6>
-        <p class="card-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing...
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">John Jones</h5>
-        <h6 class="card-subtitle text-muted">Subject</h6>
-        <p class="card-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing...
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">John Jones</h5>
-        <h6 class="card-subtitle text-muted">Subject</h6>
-        <p class="card-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing...
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">John Jones</h5>
-        <h6 class="card-subtitle text-muted">Subject</h6>
-        <p class="card-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing...
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">John Jones</h5>
-        <h6 class="card-subtitle text-muted">Subject</h6>
-        <p class="card-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing...
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">John Jones</h5>
-        <h6 class="card-subtitle text-muted">Subject</h6>
-        <p class="card-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing...
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">John Jones</h5>
-        <h6 class="card-subtitle text-muted">Subject</h6>
-        <p class="card-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing...
-        </p>
-      </div>
+    <div class="container-md">
+      <div class="row bg-light"></div>
     </div>
     <!--Sidebar start-->
     <aside class="options container">
       <div class="offcanvas offcanvas-start" id="options">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title">Hello, User.</h5>
+          <h5 class="offcanvas-title d-flex gap-2">
+            <img
+              src="Assets/snail-svgrepo-com.svg"
+              alt=""
+              class="img-fluid"
+              height="24"
+              width="24"
+            />Hello, User.
+          </h5>
           <button
             type="button"
             class="btn-close"
@@ -124,13 +63,60 @@
             aria-label="Close"
           ></button>
         </div>
-        <div class="offcanvas-body row display-6">
-          <a href="#" class="bg-light">Inbox</a>
-          <a href="#">Drafts</a>
-          <a href="#" class="bg-light">Sent</a>
-          <a href="#">Trash</a>
-          <a href="#" class="bg-light">Spam</a>
-          <div class="h-50"></div>
+        <div class="offcanvas-body display-6">
+          <ul class="list-unstyled">
+            <hr class="my-1" />
+            <li class="mb-3 py-3 d-flex gap-3">
+              <img
+                src="Assets/inbox-svgrepo-com.svg"
+                alt=""
+                class="img-fluid"
+                width="24"
+                height="24"
+              /><a href="#" class="text-dark text-decoration-none">Inbox</a>
+            </li>
+            <hr class="my-1" />
+            <li class="mb-3 py-3 d-flex gap-3">
+              <img
+                src="Assets/rule-draft-svgrepo-com.svg"
+                alt=""
+                class="img-fluid"
+                width="24"
+                height="24"
+              /><a href="#" class="text-dark text-decoration-none">Drafts</a>
+            </li>
+            <hr class="my-1" />
+            <li class="mb-3 py-3 d-flex gap-3">
+              <img
+                src="Assets/send-2-svgrepo-com.svg"
+                alt=""
+                class="img-fluid"
+                width="24"
+                height="24"
+              /><a href="#" class="text-dark text-decoration-none">Sent</a>
+            </li>
+            <hr class="my-1" />
+            <li class="mb-3 py-3 d-flex gap-3">
+              <img
+                src="Assets/spam-svgrepo-com.svg"
+                alt=""
+                class="img-fluid"
+                width="24"
+                height="24"
+              /><a href="#" class="text-dark text-decoration-none">Spam</a>
+            </li>
+            <hr class="my-1" />
+            <li class="mb-3 py-3 d-flex gap-3">
+              <img
+                src="Assets/trash-bin-minimalistic-svgrepo-com.svg"
+                alt=""
+                class="img-fluid"
+                width="24"
+                height="24"
+              /><a href="#" class="text-dark text-decoration-none">Trash</a>
+            </li>
+            <hr class="my-1" />
+          </ul>
         </div>
       </div>
     </aside>
