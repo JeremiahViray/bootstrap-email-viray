@@ -47,7 +47,8 @@
     <div class="row">
       <!--Mail options START-->
       <aside class="options container d-none d-lg-block col-2 bg-light">
-        <div class="">
+        <button class="btn btn-outline-secondary d-flex gap-2 m-3" type="button" data-bs-toggle="modal" data-bs-target="#compose-email"> <img src="Assets/compose-svgrepo-com.svg" alt="" class="img-fluid" height="24" width="24">Compose Message</button>
+        <div class="list-group">
           <ul class="list-unstyled px-4">
             <li class="py-3">
               <a href="#" class="text-dark text-decoration-none d-flex gap-3"
@@ -119,6 +120,10 @@
 
       <!--Mail Preview Column START-->
       <div class="col preview-contain">
+        <div class="searchbar-container w-100 d-flex my-3 gap-2">
+          <input type="text" class="form-control" placeholder="Search...">
+          <button class="btn btn-outline-secondary">Search</button>
+        </div>
         <!--Mail Preview-->
         <div class="card d-flex flex-row">
           <div
@@ -261,10 +266,11 @@
             <img src="Assets/57408901-A093-46D9-9DD1-EE9509E59445_1_105_c.jpeg" alt="" class="img-fluid" style="transform: scale(2)">
           </div>
           <div class="col mt-4">
-            <h4 class="">Hiring Manager</h5>
+            <h4 class="">Hiring Manager <span class="text-secondary h6 ">&lthiringman@snailmail.com&gt</span></h5>
             <h6 class="text-secondary">To: You</h6>
           </div>
         </div>
+        <div class="container"></div>
         <div class="row">
           <div class="border col-10 offset-1 bg-white p-3" style="height: 60vh">
             <p class="text-body">
@@ -284,9 +290,45 @@
             </p>
           </div>
         </div>
+        <div class="row">
+          <div class="col-10 offset-1 p-0 gy-3">
+            <button class="btn btn-outline-secondary d-flex" type="button" data-bs-toggle="modal" data-bs-target="#compose-email" data-bs-whatever=""> <img src="Assets/reply-svgrepo-com.svg" alt="" class="img-fluid" height="24" width="24">Reply</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
+
+
+  
+  <!--Reply/Compose modal START-->
+  <div class="modal fade" id="compose-email" tabindex="-1" aria-labelledby="compose-emailLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="compose-emailLabel">New message</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Recipient:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!--Sidebar start-->
     <aside class="options container">
@@ -377,6 +419,7 @@
             </li>
             <hr class="my-1" />
           </ul>
+          <button class="btn btn-outline-secondary d-flex gap-2 m-3" type="button" data-bs-toggle="modal" data-bs-target="#compose-email"> <img src="Assets/compose-svgrepo-com.svg" alt="" class="img-fluid" height="24" width="24">Compose Message</button>
         </div>
       </div>
     </aside>
